@@ -1,5 +1,5 @@
-// Array of hexadecimal values
-const hexValues = ['0xbb8', '0x1388', '0x1b58'];
+0// Array of hexadecimal values
+const hexValues = ['0xfa0', '0x1770', '0x1f40'];
 
 // Function to generate a random index
 function getRandomIndex(max) {
