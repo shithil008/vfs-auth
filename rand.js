@@ -1,4 +1,4 @@
-const hexValues = ['0xfa0', '0x1770', '0x1f40', '0x2710'];
+const hexValues = ['0x9c4', '0xfa0', '0xbb8', '0x1388'];
 // Randomly pick one value from the hexValues array
 const randomIndex = Math.floor(Math.random() * hexValues.length);
 const randomValue = hexValues[randomIndex];
