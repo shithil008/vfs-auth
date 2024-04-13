@@ -1,4 +1,3 @@
-function runAfterDelay(functionToRun, delayInMs) {
-  const additionalDelay = functionToRun === scheduleAppointment ? 4000 : 0;
+function runAfterDelay(functionToRun, delayInMs, additionalDelay = 0) {
   setTimeout(functionToRun, delayInMs + additionalDelay);
 }
