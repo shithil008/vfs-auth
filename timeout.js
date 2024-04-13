@@ -1,14 +1,7 @@
-// timeout.js
-function delayedFunction(callback, delay) {
-    setTimeout(() => {
-        callback();
-    }, delay);
+function executeFunctionWithDelay(functionName, delay) {
+    let additionalDelay = 0;
+    if (functionName === 'scheduleAppointment') {
+        additionalDelay = 4000;
+    }
+    setTimeout(window[functionName], delay + additionalDelay);
 }
-
-// Example usage: This function can be called from any script that imports this file
-function exampleFunction() {
-    console.log("This function was delayed!");
-}
-
-// To use this function with a delay
-delayedFunction(exampleFunction, 3000); // Delays the exampleFunction by 3000 milliseconds (3 seconds)
