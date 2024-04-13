@@ -1,14 +1,14 @@
 // timeout.js
-function runAfterDelay(func, delay) {
-  setTimeout(func, delay);
+function delayedFunction(callback, delay) {
+    setTimeout(() => {
+        callback();
+    }, delay);
 }
 
-function scheduleAppointment(func, initialDelay, additionalDelay) {
-  setTimeout(() => {
-    func();
-    setTimeout(func, additionalDelay);
-  }, initialDelay);
+// Example usage: This function can be called from any script that imports this file
+function exampleFunction() {
+    console.log("This function was delayed!");
 }
 
-// Export the functions
-export { runAfterDelay, scheduleAppointment };
+// To use this function with a delay
+delayedFunction(exampleFunction, 3000); // Delays the exampleFunction by 3000 milliseconds (3 seconds)
