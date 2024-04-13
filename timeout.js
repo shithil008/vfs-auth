@@ -1,7 +1,7 @@
-function executeFunctionWithDelay(functionName, delay) {
+function executeFunctionWithDelay(functionToExecute, delay) {
     let additionalDelay = 0;
-    if (functionName === 'scheduleAppointment') {
+    if (functionToExecute.name === 'scheduleAppointment') {
         additionalDelay = 4000;
     }
-    setTimeout(window[functionName], delay + additionalDelay);
+    setTimeout(functionToExecute, delay + additionalDelay);
 }
