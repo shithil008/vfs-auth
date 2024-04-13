@@ -1,9 +1,8 @@
-// Function to execute a function after a specified delay
+// timeout.js
 function runAfterDelay(func, delay) {
   setTimeout(func, delay);
 }
 
-// Function to schedule an appointment with an additional delay
 function scheduleAppointment(func, initialDelay, additionalDelay) {
   setTimeout(() => {
     func();
